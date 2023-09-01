@@ -16,11 +16,11 @@ class GuessingGame {
     }
 
     lower() {
-        this.rightBorder = this.guess() // - 1
+        this.rightBorder = this.testNumber
     }
 
     greater() {
-        this.leftBorder = this.guess() // + 1
+        this.leftBorder = this.testNumber
     }
 }
 
