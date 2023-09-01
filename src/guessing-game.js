@@ -11,10 +11,6 @@ class GuessingGame {
     }
 
     guess() {
-        // console.log(this.rightBorder, '===', this.leftBorder)
-        // console.log(this.rightBorder - this.leftBorder)
-        // console.log(Math.floor((this.rightBorder - this.leftBorder) / 2))
-        // console.log(Math.floor((this.rightBorder - this.leftBorder) / 2) + this.leftBorder)
         this.testNumber = (Math.round((this.rightBorder + this.leftBorder) / 2))
         return this.testNumber
     }
@@ -29,44 +25,3 @@ class GuessingGame {
 }
 
 module.exports = GuessingGame;
-
-
-const number = 279;
-const game = new GuessingGame();
-game.setRange(0, 3445)
-
-let result = game.guess();
-console.log(game)
-game.lower();
-result = game.guess();
-console.log(game)
-game.lower();
-result = game.guess();
-console.log(game)
-game.lower();
-result = game.guess();
-console.log(game)
-game.greater();
-result = game.guess();
-console.log(game)
-game.lower();
-result = game.guess();
-console.log(game)
-game.greater();
-result = game.guess();
-console.log(game)
-game.lower();
-result = game.guess();
-console.log(game)
-game.lower();
-result = game.guess();
-console.log(game)
-game.greater();
-result = game.guess();
-console.log(game)
-game.lower();
-result = game.guess();
-console.log(game)
-
-
-
